@@ -2,6 +2,8 @@
 452 -> 11
 82 -> 10
 9012 -> 12*/
+try
+{
 int FindSumOfNumber (int number)
 {
     int result = 0;
@@ -14,6 +16,14 @@ int FindSumOfNumber (int number)
 }      
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+number=Math.Abs(number);
 int SumOfNumber = FindSumOfNumber(number);
  Console.WriteLine($"{number} - > {SumOfNumber}");
+}
+catch
+{
+Console.ForegroundColor= ConsoleColor.Red;
+Console.WriteLine("Ошибка ввода! Вы ввели не числовое значение! повторите ввод.");
+Console.ResetColor();  
+}
  

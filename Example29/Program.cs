@@ -41,7 +41,6 @@ for (int i = 0; i < array.Length; i++)
     }
     Console.WriteLine("]");
 }
-
 int [] array = new int[8];
 Console.WriteLine($"Хотите заполнить массив вручную? Напиши Да или Нет!");
 string? text = Console.ReadLine();
@@ -54,6 +53,3 @@ else
 {
     NewArrayOfNumberRandom(array);
 }
-
-          
-        

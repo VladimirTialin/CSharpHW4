@@ -5,7 +5,7 @@
 int NewPow (int arg1, int arg2)
 {
    int  result = arg1;
-    for (int i = 1; i < 5; i++)
+    for (int i = 1; i < arg2; i++)
     {
         arg1=result*arg1;
     }
@@ -21,7 +21,7 @@ int numberTwo = Convert.ToInt32(Console.ReadLine());
 Console.ResetColor();
 int ResultPow = NewPow(numberOne, numberTwo);
 Console.WriteLine();
-Console.WriteLine($"{numberOne}, {numberTwo} -> {ResultPow}");
+Console.WriteLine($"Наше число {numberOne}, в {numberTwo} степени -> {ResultPow}");
 }
 catch
 {

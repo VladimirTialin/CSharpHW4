@@ -84,3 +84,4 @@ else if (press.Key==ConsoleKey.N)
         NewArrayOfNumberRandom(array); 
     }
 }
+//Осталось поработать с динамическим массив, чтобы ввод прерывать клавишей
